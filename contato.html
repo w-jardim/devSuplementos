@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Fictícia - Contato</title>
+  <link rel="stylesheet" href="styles/contato.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="contato.html">📬 Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fale Conosco</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" readonly>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" readonly>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" readonly>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" readonly>
+
+      <label for="assunto">Assunto:</label>
+      <textarea id="assunto" name="assunto" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>DEV Suplementos. | © Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/viaCep.js"></script>
+</body>
+</html>
