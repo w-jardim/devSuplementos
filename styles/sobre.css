@@ -1,36 +1,120 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f3f3;
-  color: #333;
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
+
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
 }
-h1 {
-  color: #0077cc;
+
+/* LOGO */
+.logo-dev {
+  height: 150px;
+  max-width: 100%;
+  object-fit: contain;
 }
-footer {
-  background-color: #222;
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 3px solid #FFD700;
+  background-color: #000;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* HEADER */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* CARROSSEL */
+.carousel-section {
+  background-color: #f8f9fa;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.carousel-caption p {
   color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  font-size: 1rem;
 }
+
+/* FOOTER */
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* RESPONSIVO */
+@media (min-width: 500px){ 
+    nav p {
+        font-size: 1.5rem;
+    }
+
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .logo-dev {
+    height: 50px;
+  }
+
+  }/* RESPONSIVO */
+@media (min-width: 1000px) {
+    
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .logo-dev {
+    height: 100px;
+  }
+}
+
+
+/* ===========================
+       SOBRE NÓS 
+============================== */
+#sobrenos{
+   
+}
+#sobrenos ul{
+    list-style: none;
+}
+
+#sobrenos ul li {
+    font-weight: bold;
+}
+

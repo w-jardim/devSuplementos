@@ -1,66 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - DevSuplemento</title>
-     <!-- BOOSTRAP -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- fontawsome -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSuplementos</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/sobre.css">
-</head>
-<body>
 
-<header>
-    <h1>DevSuplemento</h1>
-    <p>Energia para sua performance!</p>
-</header>
-
-<div class="container">
-    <h1>Sobre Nós</h1>
-    <p>A <strong>DevSuplemento</strong> nasceu em 2024 com a missão de transformar a vida de atletas, estudantes e profissionais da tecnologia através da nutrição de alta performance.</p>
-    
-    <p>Somos apaixonados por saúde, inovação e resultados. Por isso, desenvolvemos suplementos de qualidade superior, pensados para quem busca mais energia, foco e resistência no dia a dia.</p>
-    
-    <p>Nossos produtos são testados e aprovados por especialistas e seguem rigorosos padrões de qualidade, garantindo segurança e eficiência para o seu corpo e mente.</p>
-    
-    <h2>Nossa Visão</h2>
-    <p>Ser referência no mercado de suplementos, unindo tecnologia e ciência para melhorar o desempenho físico e mental das pessoas.</p>
-
-    <h2>Valores</h2>
-    <ul>
-        <li>Qualidade e transparência</li>
-        <li>Compromisso com resultados reais</li>
-        <li>Inovação contínua</li>
-        <li>Respeito à saúde e ao bem-estar</li>
-    </ul>
-</div>
-
-<footer>
-   <div class="footer-topo">
-        <div class="footer-section">
-
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./styles/sobre.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="assets/img/DEVtransp.png"
+            alt="Logo DevSuplementos"
+            class="logo-dev me-2"
+          />
+          <p class="text-warning">
+            "Potencialize seu corpo, acelere seu desenvolvimento."
+          </p>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="contato.html">Contato</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-section"></div>
-        <div class="footer-section"></div>
-   </div>
-   <div class="footer-botton">
-     <p>&copy; 2024 DevSuplemento. Todos os direitos reservados.</p>
-   </div>
-</footer>
+      </div>
+    </nav>
 
- <!-- javascript boostrap -->     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">        
-    </script>
-    <!-- script local -->
-     <script src="./js/main.js"></script>
+    <section id="sobrenos">
+      <h1 class="text-warning text-center">Sobre Nós</h1>
 
-</body>
+      <div class="container topo">
+        <p>
+          A <strong class="text-warning">DevSuplemento</strong> nasceu em 2025
+          com a missão de transformar a vida de atletas, estudantes e
+          profissionais da tecnologia através da nutrição de alta performance.
+        </p>
+        <p>
+          Somos apaixonados por saúde, inovação e resultados. Por isso,
+          desenvolvemos suplementos de qualidade superior, pensados para quem
+          busca mais energia, foco e resistência no dia a dia.
+        </p>
+        <p>
+          Nossos produtos são testados e aprovados por especialistas e seguem
+          rigorosos padrões de qualidade, garantindo segurança e eficiência para
+          o seu corpo e mente.
+        </p>
+
+        <h2 class="text-warning">Nossa Visão</h2>
+        <p>
+          Ser referência no mercado de suplementos, unindo tecnologia e ciência
+          para melhorar o desempenho físico e mental das pessoas.
+        </p>
+
+        <h2 class="text-warning">Valores</h2>
+        <ul>
+          <li>Qualidade e transparência</li>
+          <li>Compromisso com resultados reais</li>
+          <li>Inovação contínua</li>
+          <li>Respeito à saúde e ao bem-estar</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-warning text-black py-3 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2025 DevSuplementos. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Local -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
