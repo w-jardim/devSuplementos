@@ -1,45 +1,69 @@
-/* RESET */
+/* RESET GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* BODY */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
 }
 
-/* LOGO */
+/* LINKS */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* =======================================
+   NAVBAR
+======================================= */
+.navbar {
+  border-bottom: 2px solid #ffffff; /* Linha amarela sob a navbar */
+  background-color: #000000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 01.1rem);
+}
+
+.navbar .navbar-brand span {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* =======================================
+   LOGO
+======================================= */
 .logo-dev {
   height: 150px;
   max-width: 100%;
   object-fit: contain;
 }
 
-/* NAVBAR */
-.navbar {
-  border-bottom: 3px solid #FFD700;
-  background-color: #000;
+@media (max-width: 576px) {
+  .logo-dev {
+    height: 60px;
+  }
 }
 
-.nav-link {
-  font-weight: 500;
-  margin-left: 15px;
-  transition: color 0.3s ease;
+/* =======================================
+   HEADER
+======================================= */
+header {
+  background-color: #FFD700;
+ color: #000000!important;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.nav-link:hover {
-  color: #ffffff !important;
-}
-
-/* HEADER */
 header h1 {
-  font-size: 2.5rem;
   font-weight: bold;
+  font-size: 2.5rem;
 }
 
 header p {
@@ -47,69 +71,104 @@ header p {
   font-weight: 300;
 }
 
-/* CARROSSEL */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+
+/* =======================================
+   CARROSSEL
+======================================= */
 .carousel-section {
   background-color: #f8f9fa;
+  padding: 2rem 0;
+  
+  
 }
 
-.carousel-caption h5 {
-  font-weight: bold;
+.carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+  
+  
+}
+
+.carousel-img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-top: auto;
+}
+
+footer h5 {
   color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.carousel-caption p {
-  color: #fff;
-  font-size: 1rem;
-}
-
-/* FOOTER */
-footer p {
+footer p,
+footer li {
   font-size: 0.9rem;
-  margin: 0;
+  color: #cccccc;
 }
 
-/* RESPONSIVO */
-@media (min-width: 500px){ 
-    nav p {
-        font-size: 1.5rem;
-    }
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
 
+footer a {
+  color: #FFD700;
+  transition: color 0.3s;
+  cursor: pointer;
+}
 
-  header h1 {
-    font-size: 2rem;
+footer a:hover {
+  color: #ffffff;
+}
+
+footer .border-secondary {
+  border-color: #444 !important;
+}
+
+footer .text-muted {
+  font-size: 0.8rem;
+  color: #888888 !important;
+}
+
+@media (max-width: 576px) {
+  footer h5 {
+    font-size: 1.1rem;
   }
 
-  header p {
-    font-size: 1rem;
-  }
-
-  .logo-dev {
-    height: 50px;
-  }
-
-  }/* RESPONSIVO */
-@media (min-width: 1000px) {
-    
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .logo-dev {
-    height: 100px;
+  footer p,
+  footer li {
+    font-size: 0.85rem;
   }
 }
+
 
 
 /* ===========================
        SOBRE NÓS 
 ============================== */
-#sobrenos{
-   
-}
+
 #sobrenos ul{
     list-style: none;
 }
