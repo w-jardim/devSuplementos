@@ -1,37 +1,29 @@
-/* =============================
-   RESET E CONFIGURAÇÃO BASE
-============================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+/* BODY */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
 }
 
-/* =============================
-   CABEÇALHO (HEADER)
-============================= */
-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* LOGO */
+.logo-dev {
+  height: 150px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-header p {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-/* =============================
-   NAVBAR PERSONALIZADA
-============================= */
+/* NAVBAR */
 .navbar {
   border-bottom: 3px solid #FFD700;
+  background-color: #000;
 }
 
 .nav-link {
@@ -44,38 +36,45 @@ header p {
   color: #ffffff !important;
 }
 
-.logo-dev {
-    width: 100px;
+/* HEADER */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-/* =============================
-   CONTEÚDO PRINCIPAL
-============================= */
-main h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
-main p {
-  font-size: 1.1rem;
-  color: #333;
+/* CARROSSEL */
+.carousel-section {
+  background-color: #f8f9fa;
 }
 
-/* =============================
-   FOOTER
-============================= */
-footer  {
-    width: 100%;
+.carousel-caption h5 {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+footer p {
   font-size: 0.9rem;
   margin: 0;
-  position: absolute;
-  bottom: 0;
 }
 
-/* =============================
-   RESPONSIVIDADE (OPCIONAL)
-============================= */
-@media (max-width: 576px) {
+/* RESPONSIVO */
+@media (min-width: 500px){ 
+    nav p {
+        font-size: 1.5rem;
+    }
+
+
   header h1 {
     font-size: 2rem;
   }
@@ -84,12 +83,23 @@ footer  {
     font-size: 1rem;
   }
 
-  main h2 {
-    font-size: 1.6rem;
+  .logo-dev {
+    height: 50px;
   }
-  footer{
-    position: fixed;
-    bottom: 0;
+
+  }/* RESPONSIVO */
+@media (min-width: 1000px) {
+    
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .logo-dev {
+    height: 100px;
   }
 }
 
@@ -97,9 +107,14 @@ footer  {
 /* ===========================
        SOBRE NÓS 
 ============================== */
-
 #sobrenos{
-    border: 1px solid #ccc;
-    width: 90%;
-    margin: 50px auto;
+   
 }
+#sobrenos ul{
+    list-style: none;
+}
+
+#sobrenos ul li {
+    font-weight: bold;
+}
+
