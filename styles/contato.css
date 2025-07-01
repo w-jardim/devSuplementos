@@ -1,0 +1,135 @@
+/* =============================
+   HEADER COM MENU LATERAL E FUNDO PRETO
+============================= */
+header {
+  background-color: #000; /* fundo preto */
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #FFD700;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* =============================
+   TÍTULO DA PÁGINA
+============================= */
+main h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 30px;
+  color: #222;
+}
+
+/* =============================
+   FORMULÁRIO DE CONTATO
+============================= */
+form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #FFD700;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button[type="submit"] {
+  background-color: #FFD700;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  background-color: #FFD700;;
+}
+
+/* =============================
+   FOOTER AMARELO
+============================= */
+footer {
+  background-color: #FFD700;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* =============================
+   RESPONSIVIDADE
+============================= */
+@media (max-width: 576px) {
+  main h1 {
+    font-size: 1.6rem;
+  }
+
+  form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}

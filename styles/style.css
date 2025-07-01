@@ -1,37 +1,28 @@
-/* =============================
-   RESET E CONFIGURAÇÃO BASE
-============================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
 }
 
-/* =============================
-   CABEÇALHO (HEADER)
-============================= */
-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* LOGO */
+.logo-dev {
+  height: 160px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-header p {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-/* =============================
-   NAVBAR PERSONALIZADA
-============================= */
+/* NAVBAR */
 .navbar {
   border-bottom: 3px solid #FFD700;
+  background-color: #000;
 }
 
 .nav-link {
@@ -44,30 +35,39 @@ header p {
   color: #ffffff !important;
 }
 
-/* =============================
-   CONTEÚDO PRINCIPAL
-============================= */
-main h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* HEADER */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-main p {
-  font-size: 1.1rem;
-  color: #333;
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
-/* =============================
-   FOOTER
-============================= */
+/* CARROSSEL */
+.carousel-section {
+  background-color: #f8f9fa;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* FOOTER */
 footer p {
   font-size: 0.9rem;
   margin: 0;
 }
 
-/* =============================
-   RESPONSIVIDADE (OPCIONAL)
-============================= */
+/* RESPONSIVO */
 @media (max-width: 576px) {
   header h1 {
     font-size: 2rem;
@@ -77,7 +77,7 @@ footer p {
     font-size: 1rem;
   }
 
-  main h2 {
-    font-size: 1.6rem;
+  .logo-dev {
+    height: 50px;
   }
 }
