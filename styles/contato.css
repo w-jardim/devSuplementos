@@ -1,36 +1,58 @@
 /* =============================
-   HEADER COM MENU LATERAL E FUNDO PRETO
+   RESET E BASE
 ============================= */
-header {
-  background-color: #000; /* fundo preto */
-  padding: 10px 0;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  transition: background 0.3s, color 0.3s;
-}
-
-.menu li a:hover {
-  background-color: #FFD700;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
   color: #000;
-  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* =============================
-   TÍTULO DA PÁGINA
+   NAVBAR
+============================= */
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 3px solid #FFD700;
+  padding: 15px 0;
+}
+
+/* LOGO */
+.logo-dev {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* SLOGAN EM <strong> */
+.navbar-brand strong {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* LINKS DO MENU */
+.navbar-nav .nav-link {
+  color: #FFD700 !important;
+  text-decoration: none !important; /* remove sublinhado */
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* =============================
+   TÍTULO
 ============================= */
 main h1 {
   text-align: center;
@@ -40,7 +62,7 @@ main h1 {
 }
 
 /* =============================
-   FORMULÁRIO DE CONTATO
+   FORMULÁRIO
 ============================= */
 form {
   background-color: #f9f9f9;
@@ -50,7 +72,6 @@ form {
   margin: 30px auto;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form label {
@@ -96,29 +117,37 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-  background-color: #FFD700;;
+  background-color: #e6c200;
 }
 
 /* =============================
-   FOOTER AMARELO
+   FOOTER
 ============================= */
 footer {
   background-color: #FFD700;
   color: #000;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  width: 100%;
-}
-
-footer p {
-  margin: 5px 0;
+  padding: 15px 0;
+  margin-top: auto;
 }
 
 /* =============================
-   RESPONSIVIDADE
+   RESPONSIVO
 ============================= */
 @media (max-width: 576px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar-brand strong {
+    margin-top: 5px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
   main h1 {
     font-size: 1.6rem;
   }
@@ -126,10 +155,5 @@ footer p {
   form {
     padding: 20px;
     margin: 20px;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
   }
 }
