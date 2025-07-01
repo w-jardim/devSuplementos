@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Carrinho - DevSuplementos</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <img src="assets/img/DEVtransp.png" alt="Logo DevSuplementos" class="logo-dev me-2" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-warning" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="carrinho.html">Meu Carrinho</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO DO CARRINHO -->
+  <section class="container my-5">
+    <h3 class="text-warning">🛒 Meu Carrinho</h3>
+    <ul class="list-group mb-3" id="carrinho-lista"></ul>
+    <p class="fs-5">Total: <strong>R$ <span id="carrinho-total">0.00</span></strong></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white pt-4 pb-2 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning"><a href="sobre.html">Sobre nós</a></h5>
+          <p class="small">A DevSuplementos nasceu para turbinar o corpo e o cérebro de quem vive entre linhas de código e barras na academia.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning"><a href="contato.html">Contato</a></h5>
+          <ul class="list-unstyled small">
+            <li><i class="fas fa-envelope text-warning me-2"></i>contato@devsuplementos.com</li>
+            <li><i class="fas fa-phone text-warning me-2"></i>(21) 99999-9999</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning">Siga-nos</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-warning fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-warning fs-5"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-warning fs-5"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <div class="text-center small text-muted">&copy; 2025 DevSuplementos. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para exibir carrinho -->
+  <script>
+    const carrinhoLista = document.getElementById('carrinho-lista');
+    const carrinhoTotal = document.getElementById('carrinho-total');
+
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    function atualizarCarrinho() {
+      carrinhoLista.innerHTML = '';
+      let total = 0;
+
+      if (carrinho.length === 0) {
+        carrinhoLista.innerHTML = '<li class="list-group-item text-center">Seu carrinho está vazio.</li>';
+        carrinhoTotal.textContent = '0.00';
+        return;
+      }
+
+      carrinho.forEach((item, index) => {
+        total += item.preco;
+
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
+
+        li.innerHTML = `
+          ${item.nome} - R$ ${item.preco.toFixed(2)}
+          <button class="btn btn-sm btn-danger" onclick="removerItem(${index})">x</button>
+        `;
+
+        carrinhoLista.appendChild(li);
+      });
+
+      carrinhoTotal.textContent = total.toFixed(2);
+    }
+
+    function removerItem(index) {
+      carrinho.splice(index, 1);
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+      atualizarCarrinho();
+    }
+
+    window.removerItem = removerItem;
+
+    atualizarCarrinho();
+  </script>
+</body>
+</html>

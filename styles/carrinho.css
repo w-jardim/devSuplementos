@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo-dev {
+  height: 50px;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+button.btn-danger {
+  font-size: 0.8rem;
+  padding: 2px 8px;
+}
+.car {
+  width: 100px;
+}

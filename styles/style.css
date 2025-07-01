@@ -38,7 +38,7 @@ a:hover {
   font-weight: 500;
 }
 .navbar p {
-  font-size: 20px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -160,7 +160,9 @@ footer .text-muted {
   font-size: 0.8rem;
   color: #888888 !important;
 }
-
+/* =======================================
+   RESPONSIVIDADE CELULAR
+======================================= */
 @media (max-width: 576px) {
   footer h5 {
     font-size: 1.1rem;
@@ -170,4 +172,7 @@ footer .text-muted {
   footer li {
     font-size: 0.85rem;
   }
+}
+.car{
+  color: #FFD700;
 }
