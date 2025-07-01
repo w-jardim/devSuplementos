@@ -44,6 +44,10 @@ header p {
   color: #ffffff !important;
 }
 
+.logo-dev {
+    width: 100px;
+}
+
 /* =============================
    CONTEÚDO PRINCIPAL
 ============================= */
