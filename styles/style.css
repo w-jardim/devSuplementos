@@ -35,6 +35,10 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 500;
 }
+.navbar p {
+  font-size: 20px;
+  text-align: center;
+}
 
 /* =======================================
    LOGO
@@ -78,6 +82,9 @@ header p {
 
   header p {
     font-size: 1rem;
+  }
+  .carousel-item img {
+    width: 100px;
   }
 }
 
