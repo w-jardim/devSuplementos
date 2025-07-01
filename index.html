@@ -1,30 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- BOOSTRAP -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>DevSuplementos</title>
 
-    <!-- styles css -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/img/DEVtransp.png" alt="Logo DevSuplementos" style="height: 40px;" class="me-2" />
+          <strong class="text-warning">DevSuplementos</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <!-- javascript boostrap -->     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">        
-    </script>
-    <!-- script local -->
-     <script src="./js/main.js"></script>
+    <!-- HEADER -->
+    <header class="bg-black text-warning py-4">
+      <div class="container text-center">
+        <h1 class="mb-0">DevSuplementos</h1>
+        <p class="mb-0">Performance com qualidade</p>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-fill bg-white text-dark py-5">
+      <div class="container text-center">
+        <h2>Bem-vindo à loja!</h2>
+        <p>Explore nossa linha de suplementos para desenvolvedores e atletas.</p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-warning text-black py-3 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 DevSuplementos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Local -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
