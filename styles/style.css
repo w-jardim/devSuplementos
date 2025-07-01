@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+/* BODY */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
@@ -34,6 +36,10 @@ a:hover {
 .navbar .navbar-brand span {
   font-size: 0.85rem;
   font-weight: 500;
+}
+.navbar p {
+  font-size: 20px;
+  text-align: center;
 }
 
 /* =======================================
@@ -78,6 +84,9 @@ header p {
 
   header p {
     font-size: 1rem;
+  }
+  .carousel-item img {
+    width: 100px;
   }
 }
 
